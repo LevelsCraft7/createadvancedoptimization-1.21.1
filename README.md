@@ -4,17 +4,21 @@ Create: Advanced Optimization is a NeoForge server-side optimization and diagnos
 
 It targets Create `6.0.10` specifically and focuses on reducing Create-related TPS drops and lag spikes caused by large factories, processing chains, logistics, packages, trains, and contraptions while preserving normal gameplay behavior.
 
+The current release is **version 1.3**.
+
 ## Target
 
+- Mod version: `1.3`
 - Minecraft: `1.21.1`
 - Loader: `NeoForge`
+- NeoForge: `21.1.233` or newer for Minecraft 1.21.1
 - Java: `21`
-- Create: `6.0.10`
+- Create: exactly `6.0.10`
 - Mod ID: `createadvancedoptimization`
 
 ## Server-side focus
 
-This mod is intentionally server-oriented.
+This mod is intentionally server-oriented and focuses on server TPS, MSPT and Create-related processing hotspots.
 
 It does not optimize:
 
@@ -26,7 +30,7 @@ It does not optimize:
 - Iris
 - other purely graphical client features
 
-## V1.2 features
+## Version 1.3 features
 
 - strict Create `6.0.10` compatibility guard
 - server config with per-feature toggles
@@ -34,50 +38,57 @@ It does not optimize:
 - Create diagnostics reports written to `logs/createadvancedoptimization/reports/` as unique `.txt` debriefs plus richer local `.html` reports
 - `PackageEntity` monitoring with per-dimension tracking and chunk hotspots on demand
 - conservative Diving Boots marker-write cleanup without persistent entity-side memoization
-- bounded local spout lookup cache for official Create filling recipe checks, enabled by default
+- bounded local Spout lookup cache for official Create filling recipe checks, enabled by default
 - one-tick Basin and Mechanical Crafter recipe memoization with dimension-aware keys and nullable Crafter results
-- belt funnel and deployer micro-optimizations for redundant stack-copy hot paths seen in Spark profiles
+- belt funnel and deployer micro-optimizations for redundant stack-copy hot paths
 - cache and optimization effectiveness counters in `/cao status` and `/cao stats`
-- PackageEntity age, stationary-candidate, and top-chunk diagnostics for logistics-heavy servers
-- disabled-by-default experimental package config placeholder for future behavior work
+- PackageEntity age, stationary-candidate and top-chunk diagnostics for logistics-heavy servers
+- disabled-by-default experimental package configuration placeholder for future behavior work
 
 ## What the mod does not do
 
 - no global "every other tick" throttling
-- no forced slowdown of belts, funnels, fluids, machines, trains, or contraptions
-- no async access to live world data
-- no redistribution or patching of the Create jar itself
-- no client-only config
+- no forced slowdown of belts, funnels, fluids, machines, trains or contraptions
+- no asynchronous access to live world data
+- no redistribution, modification or bundling of the Create JAR
+- no client-only configuration
 
 ## Installation
 
 1. Install NeoForge for Minecraft `1.21.1`.
-2. Install Create `6.0.10`.
-3. Place the generated `createadvancedoptimization` jar on the server with Create.
-4. Configure server settings through the generated server config if needed.
+2. Install Create `6.0.10` separately.
+3. Place `createadvancedoptimization-1.3.jar` in the server's `mods` folder.
+4. Start the server and adjust the generated server configuration if needed.
+
+Create is a required dependency. It is not included inside Create: Advanced Optimization and must be installed separately by the server or modpack owner.
+
+## Building from source
+
+The development environment retrieves Create `6.0.10` from the official Create Maven repository.
+
+```bash
+./gradlew build
+```
+
+The generated Create: Advanced Optimization JAR is written to `build/libs/`. The build dependency is used only for compilation and development runs. Create is not bundled into the finished mod JAR.
 
 ## Compatibility
 
-- Designed for large NeoForge modpacks.
-- The mod only targets Create APIs and methods directly and does not intentionally manipulate third-party mod classes.
+- Designed for large NeoForge modpacks and dedicated servers.
+- Requires Minecraft `1.21.1`, NeoForge and Create `6.0.10`.
+- The mod targets Create APIs and methods directly.
+- It does not intentionally manipulate classes belonging to unrelated third-party mods.
+- Other mods that modify the same Create methods through Mixins may require compatibility testing.
 
 ## License
 
-This project is `All Rights Reserved`.
+Create: Advanced Optimization is available under the **MIT License**.
 
-You may still:
-
-- download and use the mod normally
-- include the compiled jar in modpacks
-- run it on public or private servers
-
-You may not redistribute modified versions or reuse the code, assets, branding, or logo without permission.
-
-See `LICENSE.txt` for the full terms.
+You may use, copy, modify, merge, publish, distribute, sublicense and sell copies of the software under the conditions described in the included `LICENSE` file.
 
 ## Experimental caution
 
-V1.2 keeps risky behavior-changing ideas out of active optimization paths unless they are proven safe. Train, logistics, redstone-link, and contraption hooks remain diagnostic-only unless a separate optimization is explicitly measured and enabled.
+Version 1.3 keeps risky behavior-changing ideas out of active optimization paths unless they are proven safe. Train, logistics, redstone-link and contraption hooks remain diagnostic-only unless a separate optimization is explicitly measured and enabled.
 
 ## Documentation
 
