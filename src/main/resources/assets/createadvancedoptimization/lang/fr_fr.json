@@ -1,0 +1,18 @@
+{
+  "command.createadvancedoptimization.status": "Statut",
+  "command.createadvancedoptimization.stats": "Statistiques",
+  "command.createadvancedoptimization.reset": "Réinitialisation",
+  "command.createadvancedoptimization.profile.started": "Profilage démarré.",
+  "command.createadvancedoptimization.profile.stopped": "Profilage arrêté.",
+  "command.createadvancedoptimization.profile.error.already_active": "Une session de profilage est déjà en cours.",
+  "command.createadvancedoptimization.profile.error.diagnostics_disabled": "Les diagnostics sont désactivés ; le profiler ne peut pas collecter de données.",
+  "command.createadvancedoptimization.profile.error.mod_disabled": "Create: Advanced Optimization est désactivé ; le profiler ne peut pas démarrer.",
+  "command.createadvancedoptimization.profile.error.invalid_duration": "Durée de profilage invalide.",
+  "command.createadvancedoptimization.profile.error.no_active": "Aucune session de profilage active.",
+  "command.createadvancedoptimization.profile.error.no_report": "Aucune session de profilage active ou terminée n'est disponible pour l'export.",
+  "command.createadvancedoptimization.cache.spout": "Cache du Spout",
+  "command.createadvancedoptimization.cache.basin": "Mémoïsation Basin",
+  "command.createadvancedoptimization.cache.crafter": "Mémoïsation des Mechanical Crafters",
+  "command.createadvancedoptimization.diagnostics.disabled": "Les diagnostics sont désactivés.",
+  "command.createadvancedoptimization.reset.done": "Les sessions de profilage, les statistiques de cache, les caches de recettes et les diagnostics des colis ont été effacés."
+}

@@ -1,0 +1,33 @@
+﻿{
+  "required": true,
+  "package": "net.levelsfr.createadvancedoptimization.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BasinOperatingBlockEntityMixin",
+    "BeltBlockEntityMixin",
+    "BeltFunnelInteractionHandlerMixin",
+    "DeployerItemHandlerMixin",
+    "DivingBootsItemMixin",
+    "FluidTransportBehaviourMixin",
+    "FunnelBlockEntityMixin",
+    "GlobalLogisticsManagerMixin",
+    "GlobalRailwayManagerMixin",
+    "InvManipulationBehaviourMixin",
+    "PackageEntityMixin",
+    "PipeConnectionMixin",
+    "RecipeGridHandlerMixin",
+    "RedstoneLinkNetworkHandlerMixin",
+    "ServerChainConveyorHandlerMixin",
+    "SmartBlockEntityTickerMixin",
+    "SpoutBlockEntityMixin",
+    "TrackGraphSyncMixin",
+    "TrainMapSyncMixin",
+    "accessor.GroupedItemsAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

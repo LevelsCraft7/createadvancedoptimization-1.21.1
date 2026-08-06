@@ -1,0 +1,18 @@
+{
+  "command.createadvancedoptimization.status": "Status",
+  "command.createadvancedoptimization.stats": "Stats",
+  "command.createadvancedoptimization.reset": "Reset",
+  "command.createadvancedoptimization.profile.started": "Profiling started.",
+  "command.createadvancedoptimization.profile.stopped": "Profiling stopped.",
+  "command.createadvancedoptimization.profile.error.already_active": "A profile session is already running.",
+  "command.createadvancedoptimization.profile.error.diagnostics_disabled": "Diagnostics are disabled; the profiler cannot collect data.",
+  "command.createadvancedoptimization.profile.error.mod_disabled": "Create: Advanced Optimization is disabled; the profiler cannot start.",
+  "command.createadvancedoptimization.profile.error.invalid_duration": "Invalid profiler duration.",
+  "command.createadvancedoptimization.profile.error.no_active": "No active profile session.",
+  "command.createadvancedoptimization.profile.error.no_report": "No active or completed profile session is available to export.",
+  "command.createadvancedoptimization.cache.spout": "Spout Cache",
+  "command.createadvancedoptimization.cache.basin": "Basin Memoization",
+  "command.createadvancedoptimization.cache.crafter": "Mechanical Crafter Memoization",
+  "command.createadvancedoptimization.diagnostics.disabled": "Diagnostics are disabled.",
+  "command.createadvancedoptimization.reset.done": "Profiler sessions, cache statistics, recipe memoization caches, and package diagnostics were cleared."
+}
