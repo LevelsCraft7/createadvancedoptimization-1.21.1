@@ -82,7 +82,6 @@ V1.2 keeps risky behavior-changing ideas out of active optimization paths unless
 
 ## Documentation
 
-- `docs/v1-analysis.md`
 - `docs/configuration.md`
 - `docs/commands.md`
 - `CHANGELOG.md`
