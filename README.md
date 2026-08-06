@@ -59,7 +59,6 @@ It does not optimize:
 ## Compatibility
 
 - Designed for large NeoForge modpacks.
-- Does not require Cobblemon, Pehkui, KubeJS, ModernFix, FastSuite, Create Lazy Tick, Create Ergonomic, or other Create addons.
 - The mod only targets Create APIs and methods directly and does not intentionally manipulate third-party mod classes.
 
 ## License
