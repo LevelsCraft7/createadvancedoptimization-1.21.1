@@ -80,11 +80,19 @@ The generated Create: Advanced Optimization JAR is written to `build/libs/`. The
 - It does not intentionally manipulate classes belonging to unrelated third-party mods.
 - Other mods that modify the same Create methods through Mixins may require compatibility testing.
 
-## License
+## License and attribution
 
-Create: Advanced Optimization is available under the **MIT License**.
+The source code of Create: Advanced Optimization is licensed under the **Mozilla Public License 2.0**, using the SPDX identifier `MPL-2.0`.
 
-You may use, copy, modify, merge, publish, distribute, sublicense and sell copies of the software under the conditions described in the included `LICENSE` file.
+Copyright © 2026 LevelsFR.
+
+You may use, study, modify and redistribute the covered source code under the terms of the MPL-2.0. When distributing the source code or modified covered files, you must preserve the applicable copyright and license notices and keep those covered files available under the MPL-2.0.
+
+The MPL-2.0 applies at file level. It allows this project to be combined with files under other licenses, but modifications to MPL-covered files remain subject to the MPL-2.0 source-disclosure and notice requirements.
+
+The license does not grant rights to the **Create: Advanced Optimization** name, logo, icons, artwork or project branding. Those elements remain Copyright © 2026 LevelsFR, All Rights Reserved, unless a file explicitly states otherwise.
+
+See [`LICENSE`](LICENSE) for the complete license text and [`NOTICE`](NOTICE) for the project copyright and attribution notice.
 
 ## Experimental caution
 
