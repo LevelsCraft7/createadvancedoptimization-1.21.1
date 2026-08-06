@@ -1,5 +1,43 @@
 # Changelog
 
+## 1.3.0
+
+# Create: Advanced Optimization v1.3
+
+## Build and distribution
+- Replaced the machine-specific local Create development JAR path with the official Create Maven dependency `com.simibubi.create:create-1.21.1:6.0.10-223`.
+- Create `6.0.10` remains a required runtime dependency and is not bundled inside the Create: Advanced Optimization JAR.
+- Clean source and GitHub Actions builds no longer require a local CurseForge instance or a manually supplied Create JAR.
+
+## Licensing and project
+- Relicensed the current repository source code under the Mozilla Public License 2.0 (`MPL-2.0`).
+- Added the complete MPL-2.0 license text, project attribution notice, and license notices included in future built JARs.
+- Kept the Create: Advanced Optimization name, logo, icons, artwork, and project branding reserved to LevelsFR unless explicitly stated otherwise.
+- Updated the README and generated NeoForge metadata to identify version `1.3` and the MPL-2.0 license correctly.
+
+## Runtime compatibility
+- Continues targeting Minecraft `1.21.1`, NeoForge `21.1.233`, Java `21`, and exactly Create `6.0.10`.
+- No optimization, configuration, command, diagnostic, or gameplay behavior was changed during the Maven, documentation, and licensing maintenance pass.
+
+## 1.3.0-fr
+
+# Create: Advanced Optimization v1.3
+
+## Build et distribution
+- Remplacement du chemin local vers le JAR de développement Create par la dépendance Maven officielle `com.simibubi.create:create-1.21.1:6.0.10-223`.
+- Create `6.0.10` reste une dépendance obligatoire à installer séparément et n'est pas intégré dans le JAR de Create: Advanced Optimization.
+- La compilation propre du projet et GitHub Actions ne dépendent plus d'une instance CurseForge locale ni d'un JAR Create fourni manuellement.
+
+## Licence et projet
+- Le code source actuellement présent dans le dépôt passe sous Mozilla Public License 2.0 (`MPL-2.0`).
+- Ajout du texte complet de la MPL-2.0, de la notice d'attribution du projet et des notices de licence incluses dans les prochains JAR générés.
+- Le nom Create: Advanced Optimization, le logo, les icônes, les illustrations et l'identité visuelle du projet restent réservés à LevelsFR sauf indication contraire explicite.
+- Mise à jour du README et des métadonnées NeoForge générées pour indiquer correctement la version `1.3` et la licence MPL-2.0.
+
+## Compatibilité runtime
+- Cible toujours Minecraft `1.21.1`, NeoForge `21.1.233`, Java `21` et exactement Create `6.0.10`.
+- Aucun comportement d'optimisation, de configuration, de commande, de diagnostic ou de gameplay n'a été modifié pendant cette passe de maintenance Maven, documentation et licence.
+
 ## 1.2.0
 
 # Create: Advanced Optimization v1.2
